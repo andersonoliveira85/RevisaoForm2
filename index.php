@@ -7,17 +7,17 @@
 </head>
 <body >
     <div id="wrap">
-        <form method="post" action='validar/mostrar-pedido.php' id="delivery-form" >
+        <form method="post" action='pedido_mostrar.php' id="delivery-form" >
         <div>
             <div class="cont_order">
                <fieldset>
                 <legend>Monte sua refeição</legend>
                 <div class='field_container'>
                 <label >Acompanhamento</label>
-                <label class='radiolabel'><input type="radio"  value="Arroz"  />Arroz branco</label><br/>
-                <label class='radiolabel'><input type="radio"  value="Macarrao"  />Macarrão alho-e-óleo</label><br/>
-                <label class='radiolabel'><input type="radio"  value="Farofa"  />Farofa de calabreza</label><br/>
-                <label class='radiolabel'><input type="radio"  value="Salada"  />Salada de folhas</label><br/>
+                <label class='radiolabel'><input type="radio" name="acompanhamento" value="Arroz"  />Arroz branco</label><br/>
+                <label class='radiolabel'><input type="radio" name="acompanhamento" value="Macarrao"  />Macarrão alho-e-óleo</label><br/>
+                <label class='radiolabel'><input type="radio" name="acompanhamento" value="Farofa"  />Farofa de calabreza</label><br/>
+                <label class='radiolabel'><input type="radio" name="acompanhamento" value="Salada"  />Salada de folhas</label><br/>
                 </div>
                 
                 <div class='field_container'>
@@ -32,15 +32,15 @@
                 </div>
                 <div class='field_container'>
                     <label >Adicionais:</label>
-                    <label><input type="checkbox" value="Batata-frita" />Batata-frita</label>
-                    <label><input type="checkbox" value="Batata-palha" />Batata-palha</label>
-                    <label><input type="checkbox" value="Oregano" />Orégano</label>
-                    <label><input type="checkbox" value="Vinagrete" />Vinagrete</label>
-                    <label><input type="checkbox" value="Tomate" />Tomate</label>
-                    <label><input type="checkbox" value="Cebola" />Cebola</label>
+                    <label><input type="checkbox" name="adicionais[]" value="Batata-frita" />Batata-frita</label>
+                    <label><input type="checkbox" name="adicionais[]" value="Batata-palha" />Batata-palha</label>
+                    <label><input type="checkbox" name="adicionais[]" value="Oregano" />Orégano</label>
+                    <label><input type="checkbox" name="adicionais[]" value="Vinagrete" />Vinagrete</label>
+                    <label><input type="checkbox" name="adicionais[]" value="Tomate" />Tomate</label>
+                    <label><input type="checkbox" name="adicionais[]" value="Cebola" />Cebola</label>
                </div>
                <div class='field_container'>
-                   <label class="inlinelabel"><input type="checkbox" id="agree" /> Confirmo que as opções são verdadeiras e que está de acordo com o meu pedido.</label>
+                   <label class="inlinelabel"><input type="checkbox" id="agree" required /> Confirmo que as opções são verdadeiras e que está de acordo com o meu pedido.</label>
                </div>
               </fieldset>
             </div>
